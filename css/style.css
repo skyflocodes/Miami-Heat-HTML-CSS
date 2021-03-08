@@ -1,0 +1,245 @@
+/*Skyler Florence, December 4th, 2019*/
+/*VALIDATED BY W3*/
+
+/*
+header
+*/
+header {
+	background-color: white;
+}
+
+header img {
+	height: 30%;
+}
+
+/*
+body
+*/
+
+body {
+	font-family: 'Tomorrow', sans-serif;
+	color: white;
+	margin: 0;
+	background-image: url("../img/background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	color: #f140bc;
+}
+
+form {
+	text-align: right;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: white;
+}
+
+form img {
+	width: 50%;
+	margin-right: 10%;
+	float: left;
+	margin-bottom: 40px;
+}
+
+small {
+	font-size: 9px;
+}
+
+/*headings*/
+h1 {
+	margin-top: auto;
+	font-family: 'Bebas Neue', cursive;
+	text-align: right;
+	font-size: 300%;
+	padding-bottom: 2%;
+	color: #333;
+	display: block;
+	background-color: white;
+	width: 100%;
+	height: auto;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 0;
+	clear: both;
+	color: white;
+}
+
+h3 {
+	clear: both;
+	color: white;
+	font-size: 2em;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 0;
+}
+
+h2, h3, h4 {
+	font-family: 'Bebas Neue', cursive;
+}
+
+/*nav and links*/
+
+nav {
+	float: left;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav li {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+nav li#twitter a:hover {
+	background-image: url(../img/twitter.png) !important;
+	background-size: auto 100% !important;
+}
+
+nav li#instagram a:hover {
+	background-image: url(../img/instagram.png) !important;
+	background-size: 100% auto !important;
+}
+
+nav li a {
+	text-decoration: none;
+	font-size: 160%;
+	display: block;
+	padding-right: .75em;
+	padding-left: .75em;
+	padding-top: .75em;
+	width: auto;
+	text-align: center;
+	font-family: 'Bebas Neue';
+}
+
+nav li a:link {
+	color: #333;
+}
+
+nav li a:visited {
+	color: #3cc6fb;
+}
+
+nav li a:hover {
+	color: white;
+	background-image: url(../img/link_background_two.png);
+	padding-bottom: 2.4em;
+}
+
+nav li a:active {
+	color: #f140bc;
+	background-image: url(../img/link_background_two.png);
+	background-size: auto 100%;
+	padding-bottom: 2.6em;
+}
+
+#page1 li:nth-of-type(1) a, #page2 li:nth-of-type(2) a, #page3 li:nth-of-type(3) a, #page4 li:nth-of-type(4) a, #page5 li:nth-of-type(5) a, #page6 li:nth-of-type(6) a {
+	background-image: url(../img/link_background.png);
+	background-size: auto 100%;
+	color: white;
+	padding-bottom: 3em;
+}
+
+/*Id's*/
+
+#logo {
+	width: 65px;
+	display: inline-block;
+}
+
+#content {
+	clear: both;
+	padding: 40px 80px 80px;
+}
+
+#content p {
+	margin-left: 40px;
+	color: white;
+}
+
+#content blockquote img {
+	width: 100%;
+	max-width: 400px;
+	margin-right: 10%;
+	float: left;
+	margin-bottom: 40px;
+	color: white;
+}
+
+#content blockquote {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: white;
+}
+
+#players {
+	text-align: center;
+	color: white;
+}
+
+#players img {
+	width: 135px;
+	height: 100px;
+}
+
+#themes {
+	text-align: center;
+	color: white;
+}
+
+#themes img {
+	width: 30%;
+	height: auto;
+}
+
+/*classes*/
+
+.graphic-content {
+	width: 560px;
+	height: 315px;
+	margin-right: 40px;
+	float: left;
+	margin-bottom: 40px;
+	color: white;
+}
+
+a.stat{
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.suborset {
+	margin-top: 3%;
+	background-color: #3cc6fb;
+	color: white;
+}
+.refpage{
+	text-align: center;
+	list-style: none;
+}
+
+/*footer*/
+
+footer {
+	background-color: white;
+	clear: left;
+	margin-top: 40px;
+	padding: 40px 0;
+	width: 100%;
+	color: #333;
+	margin: 0;
+	font-size: 0.8em;
+	text-align: center;
+}

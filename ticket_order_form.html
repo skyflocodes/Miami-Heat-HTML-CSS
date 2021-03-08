@@ -1,0 +1,176 @@
+<!--Nicholas Santos, Skyler Florence, December 4th, 2019-->
+<!--VALIDATED BY W3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Miami Heat | Tickets</title>
+  <link rel="shortcut icon" href="img/Icon.png" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+<!--Page five includes order form where user can purchase tickets-->
+<body id="page5">
+  <header>
+    <nav>
+      <ul>
+        <!--Nav with links to other site pages-->
+        <li><a href="index.html" title="Go to the home page">Home</a></li>
+        <li><a href="about_us.html" title="Go to the About Us page">About</a></li>
+        <li><a href="current_roster.html" title="Go to the Current Roster page">Roster</a></li>
+        <li><a href="court_themes.html" title="Go to the Court themes page">themes</a></li>
+        <li><a href="ticket_order_form.html" title="Go to the Order Tickets page">Tickets</a></li>
+        <li><a href="contact_us.html" title="Go to the Contact Us page">Contact</a></li>
+        <li id="twitter"><a href="https://twitter.com/MiamiHEAT" title="Go To Miami Heat twitter">twitter</a></li>
+        <li id="instagram"><a href="https://www.instagram.com/miamiheat/"
+            title="Go To Miami Heat instagram">instagram</a></li>
+        <li><a href="https://www.themiamiheatstore.com/?itid=heatdotcom:main_nav:heat_store:nav_item"
+            title="to the Heat Store" rel="external">Store</a></li>
+      </ul>
+    </nav>
+    <!--Team title with logo-->
+    <h1>The Miami Heat<img src="img/logo.png" alt="Miami Heat" id="logo"></h1>
+  </header>
+  <main id="ticketform">
+    <h2>Get your 2019/20 Tickets Now!</h2>
+    <section id="orderform">
+      <form>
+        <!--Picture of American Airlines Arena ticketmaster page, directs user to official ticketmaster site if they click on the picture-->
+        <a href="https://www1.ticketmaster.ca/miami-heat-vs-toronto-raptors/event/0D005709B0E2AEEE?refArtist=K8vZ9171oZ7"
+          title="Go to Ticketmaster"><img src="img/aaarenapic.png" alt="AAArena Seating"></a>
+        <section id="SeatInfo">
+          <h4>Ticket Selection:</h4>
+          <div class="location">
+            <label for="location">Where would you like to sit?</label>
+            <select name="location" class="location" id="location">
+              <!--Option value so user can select one option-->
+              <option value="defualt">Select</option>
+              <option value="Upper">Standing $75</option>
+              <option value="Upper">Upper Bowl $100</option>
+              <option value="Lower">Lower Bowl $300</option>
+              <option value="Floor">Floor Seats $750</option>
+              <option value="Court">Court Side $1000</option>
+            </select>
+          </div>
+          <div id="numberofgames">
+            <label for="games">Number of Games:</label>
+            <select name="games" id="games">
+              <!--Option value so user can select one option-->
+              <option value="defualt">Select</option>
+              <option value="1">1 Game (Price x1)</option>
+              <option value="3">3 Games (Price x3 - 5%)</option>
+              <option value="5">5 Games (Price x5 -10%)</option>
+              <option value="10">10 Games (Price x10 -20%)</option>
+              <option value="20">20 Games (Price x20 -40%)</option>
+              <option value="Season">Season Tickets (Price x41 -60%)</option>
+            </select>
+          </div>
+          <div id="numberofseats">
+            <label for="seats">Number of Seats:</label>
+            <select name="seats" id="seats">
+              <!--Option value so user can select one option-->
+              <option value="defualt">Select</option>
+              <option value="1">1 (Price x1</option>
+              <option value="2">2 (Price x2)</option>
+              <option value="3">3 (Price x3)</option>
+              <option value="4">4 (Price x4)</option>
+              <option value="5">5 (Price x5 -5%)</option>
+              <option value="6">6 (Price x6 -6%)</option>
+              <option value="7">7 (Price x7 -7%)</option>
+              <option value="8">8 (Price x8-8%)</option>
+              <option value="9">9 (Price x9 -9%)</option>
+              <option value="10">10 (Price x10 -10%)</option>
+            </select>
+          </div>
+        </section>
+        <!--End of ticket selection section-->
+
+        <!--Start of contact info section-->
+        <section id="contactinfo">
+          <h4>Contact Info:</h4>
+          <div id="name">
+            <!--First name is required piece of information, maximum character length of 50-->
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Jim" required maxlength="50">
+            <br>
+            <!--Last name is required piece of information, maximum character length of 50-->
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Butt" required maxlength="50">
+          </div>
+          <div id="contact">
+            <!--Email is required information, maximum character length of 30-->
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="name@website.com" required maxlength="30">
+            <br>
+            <!--Phone number is required information, with a maximum character length of 10-->
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="(123)456-7890" required maxlength="10">
+          </div>
+        </section>
+        <!--End of contact information section-->
+        <!--Start of billing section-->
+        <section id="billing">
+          <!--Address is required information-->
+          <h4>Your Address:</h4>
+          <div id="streetaddress">
+            <label for="address">House/Building Address</label>
+            <input id="address" type="text" name="address" placeholder="1234 Street St." required>
+            <br>
+            <label for="appt">Apartment/Suite #</label>
+            <input id="appt" type="text" name="appt">
+          </div>
+          <div id="mailaddress">
+            <!--Province is required information-->
+            <label for="province">Province</label>
+            <select id="province" name="province" required>
+              <!--List of provinces-->
+              <!--Option so user can only select one-->
+              <option value="choose">choose…</option>
+              <option value="AB">Alberta</option>
+              <option value="BC">itish Colombia</option>
+              <option value="ON">Ontario</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New unswick</option>
+              <option value="NL">Newfoundland</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NV">Nunavut</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="PQ">Québec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="YK">Yukon Territory</option>
+            </select>
+            <br>
+            <!--Postal code is required information, maximum character length of 6-->
+            <label for="pcode">Postal Code</label>
+            <input type="text" name="pcode" id="pcode" placeholder="6T6T6T" maxlength="6" required>
+          </div>
+        </section>
+        <!--End of Contact info section-->
+        <!--Start of form submissions section-->
+        <section id="formsubmissions">
+          <input type="submit" value="Purchase" class="suborset">
+          <br>
+          <small>You will receive an email with your purchase link</small>
+          <br>
+          <!--Reset button clears all info by the user-->
+          <input type="reset" class="suborset">
+          <br>
+          <!--Disclaimer for user that button will clear their typed date-->
+          <small>***WARNING: This Button will clear all entered data***</small>
+        </section>
+      </form>
+    </section>
+    <!--End of all sections-->
+    <!--End of main element-->
+  </main>
+  <footer>
+    <!--Fair use disclaimer, including link to a more indepth page of our disclaimer and our references-->
+    <p>
+      ***DISCLAIMER*** This is an educational website, we are not in any way affiliated with the NBA. Click <a
+        href="legal/Legal.html" title="Read our Legal Page">here</a> to read our legal page.</p>
+  </footer>
+</body>
+
+</html>
