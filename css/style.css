@@ -102,16 +102,6 @@ nav li {
 	float: left;
 }
 
-nav li#twitter a:hover {
-	background-image: url(../img/twitter.png) !important;
-	background-size: auto 100% !important;
-}
-
-nav li#instagram a:hover {
-	background-image: url(../img/instagram.png) !important;
-	background-size: 100% auto !important;
-}
-
 nav li a {
 	text-decoration: none;
 	font-size: 160%;
